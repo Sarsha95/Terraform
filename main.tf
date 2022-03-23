@@ -13,6 +13,15 @@ provider "azurerm" {
   }
 }
 
+terraform {
+  backend "azurerm" {
+    resource_group_name   =  "terraformtest"
+    storage_account_name =  "tfstoragehelloaks1995"
+    container_name        =  "tfcontainer"
+    key                   =  "terraform.tfstate"
+  }
+}
+
 resource "azurerm_resource_group" "tf" {
   name     = "terraformtest"
   location = "southcentralus"
