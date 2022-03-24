@@ -39,7 +39,7 @@ resource "azurerm_container_group" "hello" {
 
   ip_address_type = "public"
   os_type         = "linux"
-  dns_name_label  = "sarsha"
+  dns_name_label  = "sarsha1995"
 
   container {
     name   = "weatherapi"
