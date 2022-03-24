@@ -28,7 +28,7 @@ variable "imagebuild" {
 }
 
 resource "azurerm_resource_group" "tf" {
-  name     = "terraformtest"
+  name     = "terratest"
   location = "southcentralus"
 }
 
